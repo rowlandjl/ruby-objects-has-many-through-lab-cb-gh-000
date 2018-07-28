@@ -7,6 +7,9 @@ class Genre
     @songs = []
   end
 
+  def artists
+    self.songs.map { |s| s.artist }
+  end 
 
 
 end
