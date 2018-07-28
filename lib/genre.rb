@@ -7,9 +7,11 @@ class Genre
     @songs = []
   end
 
-  def artists
-    self.songs.map { |s| s.artist }
-  end 
+  def songs
+    Song.all.select do |song|
+      song.genre == self
+    end 
+  end
 
 
 end
