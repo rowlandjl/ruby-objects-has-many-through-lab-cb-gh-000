@@ -4,6 +4,7 @@ class Patient
 
   def initialize(name)
     @name = name
+    @doctor = doctor 
   end
 
   def new_appointment(doctor, date)
@@ -20,6 +21,6 @@ class Patient
     appointments.map do |a|
       a.doctor
     end
-  end 
+  end
 
 end
