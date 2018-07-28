@@ -10,13 +10,13 @@ class Genre
   def songs
     Song.all.select do |song|
       song.genre == self
-    end 
+    end
   end
 
-  def artists 
+  def artists
     songs.map do |song|
-      song.artist 
-    end 
+      song.artist
+    end
   end 
 
 
