@@ -4,7 +4,7 @@ class Genre
 
   def initialize(name)
     @name = name
-    @songs = []
+    # @songs = []
   end
 
   def songs
@@ -17,7 +17,7 @@ class Genre
     songs.map do |song|
       song.artist
     end
-  end 
+  end
 
 
 end
