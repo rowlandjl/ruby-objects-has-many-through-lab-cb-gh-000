@@ -1,3 +1,7 @@
-class Patient 
+class Patient
 
-end 
+  def initialize(name)
+    @name = name
+  end 
+
+end
